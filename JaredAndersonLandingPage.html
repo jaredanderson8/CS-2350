@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="Practice03.html">
+	<title>Landing Page</title>
+	<style>
+		/* Reset CSS by Eric Meyer */
+		/* http://meyerweb.com/eric/tools/css/reset/ 
+			v2.0 | 20110126
+			License: none (public domain)
+		*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+		}
+
+		strong {
+			font-weight: bold;
+		}
+
+		nav {
+			background-color: #eee;
+			/* overflow: hidden; */
+			padding: .5rem;
+			border-bottom: 1px solid #ddd;
+		}
+
+		.clearfix::after{
+			content: " ";
+			clear: both;
+			display: table;
+		}
+
+		nav > ul {
+			display: inline-block;
+			list-style: none;
+		}
+		nav > ul > li {
+			display: inline;
+			margin: .5rem;
+		}
+
+		.to-the-left {
+			float: left;
+			margin: 5px;
+		}
+
+		.to-the-right {
+			float: right;
+		}
+		a { 
+			text-decoration: none; 
+			color:cornflowerblue;	
+		}
+
+		a:visited { color: rgb(112, 119, 226); }
+		a:hover{
+			color:rgb(45, 118, 190);
+		}
+
+		button.primary {
+			padding: .5rem .75rem;
+			border: 1px solid cornflowerblue;
+			background-color: cornflowerblue;
+			color: white;
+			margin-top: 5px;
+			margin-right: 1rem;
+		}
+
+		.featured{
+			margin: auto;
+			width: 1250px;
+			display: flex;
+		}
+		.featured h1{
+			font-size: 3rem;
+			padding: 5px;
+		}
+		.featured video {
+			float: right;
+			margin: 20px;
+			height: 15rem;
+		}
+		.featured p{
+			color: gray;
+			font-size: 17px;
+		}
+		.dv1{
+			float: right;
+			margin: 20px;
+			border: 1px solid gray;
+			background-color: lightgray;
+			width: 25%;
+			height: 15rem;
+			padding: 20px;
+		}
+		.dv2{
+			float: left;
+			height: 15rem;
+			width: 50%;
+		}
+		hr{
+			width: 1250px;
+		}
+
+		.section2{
+			margin: auto;
+			width: 1250px;
+			display: flex;
+			font-size: 1.25rem;
+			padding: 5px;
+		}
+		input{
+			margin: 2px 0px;
+			padding: 8px;
+		}
+
+		.card1{
+			padding: 20px;
+			border: 1px solid lightgray;
+			width: 33%;
+			margin-right: 1rem;
+		}
+		
+		.card2{
+			padding: 20px;
+			border: 1px solid lightgray;
+			width: 33%;
+			margin-right: 1rem;
+			margin-left: 1rem;
+		}
+		.card3{
+			padding: 20px;
+			border: 1px solid lightgray;
+			width: 33%;
+			margin-left: 1rem;
+		}
+		.section3{
+			margin: auto;
+			width: 1250px;
+			display: flex;
+			font-size: 1rem;
+			padding: 5px;
+		}
+
+		.section3 img{
+			width: 100%;
+		}
+		.section3 h2{
+			margin-bottom: 1rem;
+			font-weight: bold;
+		}
+		.section3 h3{
+			margin: 1rem 0rem;
+			font-weight: bold;
+			font-size: 22px;
+		}
+		.section3 p{
+			color: gray;
+			font-size: 17px;
+		}
+		.section4{
+			margin: auto;
+			width: 1250px;
+			display: flex;
+			font-size: 1rem;
+			padding: 5px;
+		}
+		.secondary{
+			padding: .5rem .75rem;
+			border: 1px solid darkblue;
+			background-color: whitesmoke;
+			color: darkblue;
+			margin-top: 5px;
+			width: 1240px;
+		}
+		.section5{
+			border-top: 1px solid grey;
+			border-bottom: 1px solid grey;
+			width: 100%;
+		}
+		.section5 table{
+			width: 100%;
+			padding: 1rem;
+		}
+		.section5 table > thead > tr > td{
+			font-weight: bold;
+			font-size: 20px;
+			padding: 1rem 0rem;
+		}
+		.section5 table > tbody > tr > td{
+			font-size: 16px;
+			padding: .5rem 1rem;
+			color: cornflowerblue;
+		}
+		.section6{
+			padding-bottom: 3rem;
+			background-color: whitesmoke;
+			width: 1250px;
+			margin: auto;
+		}
+    </style>
+</head>
+<body>
+	<nav class="clearfix">
+		<ul class="to-the-left">
+			<li><strong>Interplanetary</strong></li>
+			<li><a href="#1">One</a></li>
+			<li><a href="#2">Two</a></li>
+			<li><a href="#3">Three</a></li>
+		</ul>
+
+		<ul class="to-the-right">
+			
+			<li><a href="#4">My Account</a></li>
+			<button class="primary">Login</button>
+		</ul>
+	</nav>
+	<section class="featured clearfix">
+		<div class="dv2">
+			<h1>Close Your Eyes and Open Your Mind</h1>
+			<p>There is beauty in space, and it is orderly. Ther is no weather, and there is regularity. It is predictable. Everything in space obeys the laws of physics if you know theses laws, and obey them, space will treat you kindly.</p>
+			<div class="buttons">
+				<button class="primary">Take a Tour</button>
+				<button class="primary">Start a free trial</button>
+			</div>
+		</div>
+		<video width="25%" controls>
+			<source src="sample.mp4" type="video/mp4"/>
+			<p>You need a browser the supports html5 to play this video</p>
+		</video>
+		<div class="dv1">
+			Find Your Dream Planet<br>
+			<input type="text" name="Search destinations" placeholder="Moons Required"><br>
+			<p>&nbsp;</p>
+			Number of Moons<br>
+			<input type="text" name="Moons Required" placeholder="Moons Required"><br>
+			<p>&nbsp;</p>
+			<div class="buttons">
+				<button class="primary">Search Now!</button>
+			</div>
+		</div>		
+	</section>
+	
+	<hr>
+	<section class="section2">
+		
+		<h2>Trending Planetary Destinations</h2>
+	</section>
+	<section class="section3">
+		<div class="card1">
+			<h2>Pegasi B</h2>
+			<img src="http://via.placeholder.com/250.png" alt="sample 1">
+			<h3>Copernican Revolution caused an uproar</h3>
+			<p>Find Earth-like planets life outside the Solar System</p>
+		</div>
+		<div class="card2">
+			<h2>Pegasi B</h2>
+			<img src="http://via.placeholder.com/250.png" alt="sample 2">
+			<h3>Copernican Revolution caused an uproar</h3>
+			<p>Find Earth-like planets life outside the Solar System</p>
+		</div>
+		<div class="card3">
+			<h2>Pegasi B</h2>
+			<img src="http://via.placeholder.com/250.png" alt="sample 3">
+			<h3>Copernican Revolution caused an uproar</h3>
+			<p>Find Earth-like planets life outside the Solar System</p>
+		</div>
+	</section>
+	<section class="section4">
+		<div>
+			<button class="secondary">Load More</button>
+		</div>
+	</section>
+	<section class="section5">
+		<nav class="clearfix">
+			<table>
+				<thead>
+					<tr>
+						<td>Offices</td>
+						<td>Solar Systems</td>
+						<td>Contact</td>
+						<td>Offices</td>
+					</tr>
+				</thead>
+				<tr>
+					<td><a href="#1">One</a></td>
+					<td><a href="#2">One</a></td>
+					<td><a href="https://www.twitter.com">Twitter</a></td>
+					<td><a href="#3">One</a></td>
+				</tr>
+				<tr>
+					<td><a href="#4">Two</a></td>
+					<td><a href="#5">Two</a></td>
+					<td><a href="https://www.facebook.com">Facebook</a></td>
+					<td><a href="#6">Two</a></td>
+				</tr>
+				<tr>
+					<td><a href="#7">Three</a></td>
+					<td><a href="#8">Three</a></td>
+					<td><a href="https://www.instagram.com">Instagram</a></td>
+					<td><a href="#9">Three</a></td>
+				</tr>
+				<tr>
+					<td><a href="#10">Four</a></td>
+					<td><a href="#11">Four</a></td>
+					<td><a href="https://www.pintrest.com">Pintrest</a></td>
+					<td><a href="#12">Four</a></td>
+				</tr>
+			</table>
+		</nav>
+	</section >
+		<nav class="clearfix section6">
+			<ul class="to-the-left">
+				<li><a href="#13">Legal</a></li>
+				<li><a href="#14">partner</a></li>
+				<li><a href="#15">Explore</a></li>
+			</ul>
+			<ul class="to-the-right">
+				<li><strong>Copyright</strong></li>
+			</ul>
+		</nav>
+	</section>
+	
+</body>
+</html>

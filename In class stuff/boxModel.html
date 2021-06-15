@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Document</title>
+
+        <style>
+            /*Universal selector fixing the box model*/
+            * {
+                box-sizing: border-box;
+            }
+
+            /*Type selectors*/
+            body{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 16px;
+                color: white;
+            }
+            div{
+                display: inline-block;
+                width: 25%;
+                background: red;
+                float: left;
+                border: 1px dashed blue;
+                padding: 20px;
+            }
+
+            /*id selector*/
+            #dv1{
+                background-color: blue;
+                margin-top: 20px;
+            }
+
+            div#dv2{
+                background-color: maroon;
+                margin-top: 40px;
+            }
+
+            div#dv3{
+                margin-top: 60px;
+            }
+
+            div#dv4{
+                margin-top: 80px;
+            }
+
+            /*Class selector*/
+            .secondary{
+                background-color: blueviolet;
+            }
+
+            div.secondary{
+                background-color: darkmagenta;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="dv1">Div 1</div>
+        <div id="dv2">Div 2</div>
+        <div class="secondary" id="dv3">Div 3</div>
+        <div class="secondary" id="dv4">Div 4</div>
+    </body>
+</html>

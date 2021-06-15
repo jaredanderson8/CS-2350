@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="Practice03.html">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        div{
+            background-color: blue;
+            border: 1px solid white;
+            padding: 5px;
+            color: white;
+        }
+
+        section{
+            display: flex;
+            flex-flow: row wrap;
+
+            justify-content: space-around;
+            align-items: stretch;
+
+            background-color: gold;
+            height: 50vh;
+        }
+
+        div:nth-child(1){
+            flex: 1 1 auto;
+        }
+
+        #dv3{
+            flex: 3 1 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div id="dv1">DIV 1</div>
+        <div id="dv2">DIV 2</div>
+        <div id="dv3">DIV 3</div>
+        <div id="dv4">DIV 4</div>
+        <div id="dv5">DIV 5</div>
+
+
+    </section>
+   
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="Practice03.html">
+	<title>Document</title>
+	<style>
+		/* Reset CSS by Eric Meyer */
+		/* http://meyerweb.com/eric/tools/css/reset/ 
+			v2.0 | 20110126
+			License: none (public domain)
+		*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		/* Our own css */
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+		}
+
+		strong {
+			font-weight: bold;
+		}
+		nav {
+			background-color: #eee;
+			/* overflow: hidden; */
+			padding: .5rem;
+			border-bottom: 1px solid #ddd;
+		}
+
+		.clearfix::after{
+			content: " ";
+			clear: both;
+			display: table;
+		}
+
+		nav > ul {
+			display: inline-block;
+			list-style: none;
+		}
+		nav > ul > li {
+			display: inline;
+			margin: .5rem;
+		}
+
+		.to-the-left {
+			float: left;
+		}
+
+		.to-the-right {
+			float: right;
+		}
+
+		a { 
+			text-decoration: none; 
+			color:cornflowerblue;	
+		}
+
+		a:visited { color: rgb(112, 119, 226); }
+		a:hover{
+			color:rgb(45, 118, 190);
+		}
+
+		.jumbotron {
+			text-align: center;
+			padding: 2.5rem;
+			border-bottom: 2px solid #ddd;
+		}
+
+		.jumbotron > h1 {
+			font-size: 2.5rem;
+		}
+
+		.jumbotron > h2 {
+			font-size: 1.2rem;
+			margin: 1rem;
+		}
+
+		button {
+			padding: .5rem .75rem;
+			margin: 5px;
+			border: 1px solid cornflowerblue;
+			background-color: white;
+			color: cornflowerblue
+		}
+
+		button.primary {
+			background-color: cornflowerblue;
+			color: white;
+		}
+
+		.featured h1{
+			font-size: 1.75rem;
+			padding: 5px;
+		}
+		.featured video {
+			float: right;
+		}
+
+		main {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.cards {
+			margin: 2rem 0;
+		}
+		.cards > div{
+			float: left;
+			width: 33%;
+			padding: 0 .5rem;
+		}
+		.cards > h1{
+			font-size: 1.5rem;
+			margin-bottom: .75rem;
+		}
+		.stats {
+			border-top: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+			margin: 1rem 0;
+			padding: 1rem 0;
+			text-align: center;
+		}
+		.stat {
+			display: inline-block;
+			margin: 0 3rem;
+			color: cornflowerblue;
+		}
+
+		.stat > h1{
+			font-size: 32px;
+			font-weight: 200;
+		}
+		.recent-work{
+			font-size: 1.5rem;
+			margin: 0 2rem;
+			border-top: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+			display: inline-block;
+		}
+		.recent-work > h1{
+			font-size: 1.5rem;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="clearfix">
+		<ul class="to-the-left">
+			<li><strong>Site title</strong></li>
+			<li><a href="#1">One</a></li>
+			<li><a href="#2">Two</a></li>
+		</ul>
+
+		<ul class="to-the-right">
+			<li><a href="#3">Three</a></li>
+			<li><a href="#4">Four</a></li>
+			<li><a href="#6">Five</a></li>
+			<li><a href="#6">Six</a></li>
+		</ul>
+	</nav>
+	<section class="jumbotron">
+		<h1>Changing the World Through Design</h1>
+		<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, enim nam!</h2>
+		<div class="buttons">
+			<button class="primary">Learn More</button>
+			<button>Learn Less</button>
+		</div>
+	</section>
+	<main>
+		<section class="featured clearfix">
+			<video width="50%" controls>
+				<source src="sample.mp4" type="video/mp4"/>
+				<p>You need a browser the supports html5 to play this video</p>
+			</video>
+			<h1>Our Agency, our selves.</h1>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga dolore repudiandae reiciendis nam accusantium adipisci, odit quisquam, natus alias ex hic vero numquam cum nemo consequatur nostrum. Deleniti, similique corporis.</p>
+		</section>	
+		<section class="cards clearfix">
+			<div>
+				<h1>Photoshop</h1>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, pariatur ea? Qui dolor voluptas repellat nesciunt facilis. Eos aliquid corporis dolor porro quasi vitae ducimus exercitationem et aut ratione? Quam!/p>
+			</div>
+			<div>
+				<h1>JavaScript</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut cumque quam temporibus ipsam fugiat, cupiditate incidunt aperiam rem tempora veritatis sunt mollitia ex odit. Odio quas magni doloremque et exercitationem!</p>
+			</div>
+			<div>
+				<h1>Marketing</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quas expedita, doloribus quam esse iure non exercitationem laudantium inventore ullam laborum harum. Itaque, omnis! Rem nihil odit voluptates eius? Quia!</p>
+			</div>
+		</section>
+		<section class="stats">
+			<div class="stat">
+				<h1>28</h1>
+				<h2>Lorem</h2>
+			</div>
+			<div class="stat">
+				<h1>43</h1>
+				<h2>Ipsum</h2>
+			</div>
+			<div class="stat">
+				<h1>95</h1>
+				<h2>Velit</h2>
+			</div>
+			<div class="stat">
+				<h1>59</h1>
+				<h2>Error</h2>
+			</div>
+			<div class="stat">
+				<h1>18</h1>
+				<h2>Optio</h2>
+			</div>
+		</section>
+		<section class="recent-work">
+			<h1>Our Recent Work</h1>
+			<div style="text-align: center;">
+				<img src="http://via.placeholder.com/200.png" width="175" alt="sample 1">
+				<img src="http://via.placeholder.com/200.png" width="175" alt="sample 2">
+				<img src="http://via.placeholder.com/200.png" width="175" alt="sample 3">
+				<img src="http://via.placeholder.com/200.png" width="175" alt="sample 4">
+			</div>
+			
+		</section>
+		<nav class="clearfix">
+			<ul class="to-the-left">
+				<li><a href="#1">One</a></li>
+				<li><a href="#2">Two</a></li>
+				<li><a href="#3">Three</a></li>
+				<li><a href="#4">Four</a></li>
+			</ul>
+		</nav>
+	</main>
+	
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="Practice03.html">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .header{
+            padding: 10px;
+            background-color: aquamarine;
+        }
+
+        .aside{
+            display: none;
+            padding: 10px;
+            background-color: cornflowerblue;
+        }
+
+        .main{
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        .secondary{
+            padding: 10px;
+            background-color: bisque;
+        }
+
+        .footer{
+            padding: 10px;
+            background-color: lightgreen;
+        }
+
+        @media screen and (max-width: 575px){ 
+            .header{
+                height: 10vh;
+            }
+
+            .main{
+                height: 75vh;
+            }
+
+            .secondary{
+                height: 10vh;
+            }
+
+            .footer{
+                height: 5vh;
+            }
+        }
+
+        @media screen and (min-width: 575px){
+            .with-grid .aside{
+                display: block;
+                grid-row: 2 / span 2;
+            }
+
+            .with-grid {
+                display: grid;
+                grid-template-columns: 1fr 3fr ;
+                grid-template-rows: 1fr 7fr repeat(2, 1fr);
+                gap: 5px;
+            }
+
+            .with-grid .header{
+                grid-area: 1/ 1/ 2/ span 2;
+            }
+            .with-grid .footer{
+                grid-area: 4/ 1/ 5/ span 2;
+            }
+        }
+
+        @media screen and (min-width: 575px){
+            .with-flex .aside{
+                display: block;
+                flex: 1 1 25%;
+            }
+            .with-flex .content{
+                flex: 3 3 75%;
+            }
+            .with-flex .middle{
+                display: flex;
+                flex-flow: row nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="with-grid">
+        <div class="header">Header</div>
+        <div class="aside">Aside</div>
+        <div class="main">Main Content</div>
+        <div class="secondary">Secondary Content</div>
+        <div class="footer">Footer</div>
+    </section>
+
+<br>
+
+    <section class="with-flex">
+        <div class="header">Header</div>
+        <div class="middle">
+            <div class="aside">Aside</div>
+            <div class="content">
+                <div class="main">Main Content</div>
+                <div class="secondary">Secondary Content</div>
+            </div>
+        </div>
+        <div class="footer">Footer</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,316 @@
+@import url('~bootstrap/dist/css/bootstrap.css');
+
+@import url('~normalize.css/normalize.css');
+
+* {
+  box-sizing: border-box;
+}
+
+/* TODO */
+
+h2 {
+  font-size: 36px;
+}
+
+.about p{
+  text-indent: 10%;
+}
+
+.featured{
+  margin-bottom: 2rem;
+}
+
+.featured2{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.bar{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #2f2f2f;
+}
+
+.gallery h3{
+  margin: 10px;
+}
+
+@media screen and (max-width: 575px) 
+{ 
+  .main{
+    width: 95%;
+    margin: auto;
+  }
+
+  .jumbotron {
+    background-image: url("https://i.imgur.com/zVXmwX4.png");
+    background-position: center 0px;
+    width: 100%;
+    background-size: 140%;
+    height: 12rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .jumbotron .row {
+    margin-top: 7.5rem;
+  }
+  
+  .jumbotron .col{
+    background-color: #2f2f2f;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .jumbotron h1{
+    margin: 0px;
+    font-size: 20px;
+  }
+
+  .cards{
+    width: 100%;
+    margin: 2rem auto;
+  }
+
+  .cover{
+    width: 100%;
+    height: auto;
+  }
+
+  .foot {
+    color: white;
+    margin-top: 3rem;
+  }
+
+  .c{
+    font-size: 20px;
+  }
+  
+  /*Gallery*/
+
+  .gallery main {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .gallery .movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .gallery .movies .thumbnail {
+    grid-row-start: 5;
+    background-color: #2F2F2F;
+    padding: 10px;
+  }
+  
+  .gallery .movies .thumbnail img {
+    width: 144px;
+    height: auto;
+  }
+  
+  
+  .gallery .movies .featured {
+    grid-area: 1 / 1 / span 4 / span 5;
+    margin: 10px;
+    width: 30rem;
+  }
+  
+  .gallery .movies .featured img {
+    width: 100%;
+    margin: 1rem;
+  }
+  
+  .gallery .movies .featured h1{
+    grid-area: 4 / 1 / span 4 / span 5;
+  }
+  
+  .gallery .hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 575px) and (max-width: 992px)
+{ 
+
+  .main{
+    width: 95%;
+    margin: auto;
+  }
+
+  .jumbotron {
+    background-image: url("https://i.imgur.com/zVXmwX4.png");
+    background-position: center 0px;
+    width: 100%;
+    background-size: 140%;
+    height: 15rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .jumbotron .row {
+    margin-top: 7.5rem;
+  }
+  
+  .jumbotron .col{
+    background-color: #2f2f2f;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .jumbotron h1{
+    margin: 0px;
+    font-size: 20px;
+  }
+
+  .cards{
+    margin-top: 2rem auto;
+  }
+
+  .cover{
+    width: 100%;
+    height: auto;
+  }
+
+  .foot {
+    color: white;
+    margin-top: 3rem;
+  }  
+
+  .c{
+    margin-left: 30%;
+  }
+
+  /*Gallery*/
+
+  .gallery main {
+    margin: 0 0;
+    background-size: 100%;
+    padding: 0 0;
+  }
+
+  .gallery .movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .gallery .movies .thumbnail {
+    grid-row-start: 5;
+    background-color: #2f2f2f;
+    padding: 10px;
+  }
+  
+  .gallery .movies .thumbnail img {
+    width: 120px;
+    height: auto;
+  }
+  
+  .gallery .movies .featured {
+    grid-area: 1 / 1 / span 4 / span 5;
+    margin: 10px;
+    width: 30rem;
+  }
+  
+  .gallery .movies .featured img {
+    width: 100%;
+    margin: 1rem;
+  }
+  
+  .gallery .movies .featured h1{
+    grid-area: 4 / 1 / span 4 / span 5;
+  }
+
+  .gallery .hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px)
+{ 
+  .main{
+    width: 80%;
+    margin: auto;
+  }
+
+  .jumbotron {
+    background-image: url("https://i.imgur.com/zVXmwX4.png");
+    background-position: center 0px;
+    height: 30rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .jumbotron .row {
+    margin-top: 18.5rem;
+  }
+  
+  .jumbotron .col{
+    background-color: #2f2f2f;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .jumbotron h1{
+    margin: 0px;
+  }
+
+  .cards{
+    margin-top: 2rem;
+  }
+
+  .cover{
+    width: 100%;
+    height: auto;
+  }
+
+  .foot {
+    color: white;
+    margin-top: 3rem;
+  }  
+
+  .c{
+    margin-left: 30%;
+  }
+  
+  /*Gallery*/
+
+  .gallery main {
+    margin: 0 0;
+    background-size: 100%;
+    padding: 0 0;
+  }
+
+  .gallery .movies {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+  
+  .gallery .movies .thumbnail {
+    background-color: #2f2f2f;
+    padding: 10px;
+  }
+  
+  .gallery .movies .thumbnail img {
+    width: 120px;
+    height: auto;
+  }
+  
+  .gallery .movies .featured {
+    grid-area: 1 / 1 / span 4 / span 5;
+    margin: 10px;
+    width: 30rem;
+  }
+  
+  .gallery .movies .featured img {
+    width: 100%;
+    margin: 1rem;
+  }
+  
+  .gallery .movies .featured h1{
+    grid-area: 4 / 1 / span 4 / span 5;
+  }
+
+  .gallery .hidden {
+    display: block;
+  }
+}

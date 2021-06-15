@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Practice 2">
+  <meta name="robots" content="index,follow">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+
+    header {
+      background-color: green;
+      color: white;
+      padding: 5px;
+    }
+
+    header>div>span:nth-child(2) {
+      float: right;
+    }
+
+    header .subtitle {
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5rem;
+      border-top: 2px solid white;
+    }
+
+    header>h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 4rem;
+      border-top: 2px solid white;
+      text-align: center;
+      margin: 10px;
+    }
+
+    section > h1 {
+      color: darkolivegreen;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      display: inline-block;
+      background-color: aquamarine;
+      width: 30%;
+      vertical-align: top;
+      height: 300px;
+      margin: 0 10px;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .card > h1 {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      color: darkolivegreen;
+      border: 1px solid white;
+      border-radius: 20px;
+      text-align: center;
+      padding-top: 5px;
+    }
+
+    .cards {
+      text-align: center;
+    }
+
+    blockquote {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2rem;
+      font-weight: bold;
+      color: orangered;
+      text-align: center;
+    }
+
+    blockquote::before{
+      content: '"';
+      font-size: 4rem;
+      color: #ccc;
+    }
+    blockquote::after{
+      content: '"';
+      font-size: 4rem;
+      color: #ccc;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table > thead{
+      background-color: darkolivegreen;
+      color: white;
+    }
+
+    table > thead th {
+      padding: 5px;
+      text-align: left;
+    }
+
+    table > tbody td{
+      padding: 5px;
+    }
+
+    table > tbody tr:nth-child(even){
+      background-color: #eee;
+    } 
+    
+    .highlighted img{
+      float: right;
+    }
+
+    .highlighted{
+      background-color: lightsteelblue;
+      overflow: auto;
+      padding: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div>
+      <span>LOREM IPSUM</span>
+      <span>January 27, 2020</span>
+    </div>
+    <h1>
+      School Newsletter
+      <span class="subtitle">
+        Lorem ipsum dolor sit amet, consectetur enim elit.
+      </span>
+    </h1>
+
+  </header>
+
+  <section>
+    <img src="https://via.placeholder.com/900x400.png" width="100% alt=" A sample image">
+    <h1>Lorem Ipsum Dolor Sit Amet Ligula</h1>
+    <strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna Lorem ipsum dolor sit amet.</strong>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. 
+      <ol>
+        <li>Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat.</li>
+        <li>Duis aute irure dolor in
+      reprehenderit in voluptate velit esse cillum dolore eu fugiat.</li>
+        <li>Excepteur sint occaecat cupidatat non proident.</li>
+        <li>Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus</li>
+        <li>Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+      </ol>
+    </p>
+  </section>
+  <section class="cards">
+    <div class="card">
+      <h1>1</h1>
+      <h2>Lorem ipsum dolor</h2>
+      <ul>
+        <li>Lorem ipsum dolor sit amet </li>
+        <li>consectetur, adipisicing elit.</li>
+        <li>Qui illum esse veritatis unde</li>
+        <li>corrupti corporis optio iste dolor.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h1>2</h1>
+      <h2>Lorem ipsum dolor</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nostrum repellendus sed neque doloribus ipsa iusto fugit quibusdam illum alias! Qui illum esse veritatis unde, corrupti corporis optio iste dolor.</p>
+    </div>
+    <div class="card">
+      <h1>3</h1>
+      <h2>Lorem ipsum dolor</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nostrum repellendus sed neque doloribus ipsa iusto fugit quibusdam illum alias!.</p>
+    </div>
+  </section>
+
+  <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo numquam nam, dicta voluptate, veritatis molestiae fuga quam labore eum praesentium accusantium assumenda officiis? Impedit quis accusamus id, rerum optio vitae.</blockquote>
+
+  <hr>
+  <table>
+    <thead>
+      <tr>
+        <th>Lorem</th>
+        <th>Ipsum</th>
+        <th>Dolor</th>
+        <th>Amet</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem</td>
+        <td>2</td>
+        <td>4</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>Ipsum</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Dolor</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Amet</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+    </tbody>
+  </table>
+  <section class="highlighted">
+    <img src="http://via.placeholder.com/400x300.png" alt="">
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vitae, ex voluptate sapiente dolore voluptates! Placeat modi quae minus nesciunt sapiente blanditiis officiis, quis explicabo delectus nam. Voluptatibus, asperiores nulla.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque tempore suscipit. Harum odit repellendus ipsum dolore pariatur unde? Nesciunt eos doloribus, ex fugit magni quibusdam sint iste animi eum.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dolore nam quas consequatur veniam inventore ducimus exercitationem unde optio molestias reiciendis similique in porro neque eos, nemo iusto facilis? Minus!
+    </p>
+  </section>
+</body>
+
+</html>

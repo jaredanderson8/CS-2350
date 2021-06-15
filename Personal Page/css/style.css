@@ -1,0 +1,59 @@
+
+table.kind1, td, th {
+    border: 1px solid red;
+}
+h1 {
+    font-size: 20px;
+    margin: 0px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.kind2 {
+    border: 2px solid green;
+}
+
+#dv1
+{
+    background-color: #262626; 
+    color: #cccccc;
+    font-style: italic;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#dv2
+{
+    background-color: #595959; 
+    color: #cccccc;
+    font: bold;
+    height: 50px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#dv3
+{
+    background-color: #262626; 
+    color: #cccccc;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    padding: 5px;
+    border: 2px solid #cccccc;
+}

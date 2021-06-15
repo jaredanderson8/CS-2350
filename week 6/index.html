@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="Practice03.html">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div{
+            background-color: blue;
+            border: 1px solid white;
+            padding: 5px;
+            color: white;
+        }
+
+        @media print{/*tablets*/
+            div {
+                background-color: white;
+            }
+        }
+
+        @media screen and (min-width: 575px){/*tablets*/
+            div {
+                background-color: green;
+            }
+            #dv2{
+                float: left;
+                width: 30%;
+            }
+            #dv3{
+                float: left;
+                width: 70%;
+            }
+            #dv4{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 853px){/*Desktops*/
+            div {
+                background-color: red;
+            }
+            #dv2{
+                float: left;
+                width: 25%;
+            }
+            #dv3{
+                float: left;
+                width: 50%;
+            }
+            #dv4{
+                display: block;
+                float: left;
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="dv1">DIV 1</div>
+    <div id="dv2">DIV 2</div>
+    <div id="dv3">DIV 3</div>
+    <div id="dv4">DIV 4</div>
+    <div id="dv5">DIV 5</div>
+</body>
+
+</html>

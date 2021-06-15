@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="Practice03.html">
+	<title>Book Recreation</title>
+	<style>
+		/* Reset CSS by Eric Meyer */
+		/* http://meyerweb.com/eric/tools/css/reset/ 
+			v2.0 | 20110126
+			License: none (public domain)
+		*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		* {
+            box-sizing: border-box;
+        }
+
+		hr{
+			margin-top: 3rem;
+			margin-bottom: 3rem;
+		}
+
+		.sec1{
+			margin: auto;
+			width: 1000px;
+		}
+
+		.div1 >h4{
+			font-size:32.0px;
+			color:rgb(83,219,251);
+			font-weight:bold;
+			margin-top: 4rem;
+			margin-left: 2rem;
+			margin-bottom: 1rem;
+		}
+
+		.div1 >h3{
+			font-size:24.0px;
+			color:#ddd;
+			font-weight:bold;
+			margin-top: 4rem;
+			margin-left: 2rem;
+			margin-bottom: 1rem;
+		}
+
+		.div1 > h1{
+			color: #5dff00;
+			text-align: right;
+			font-size:82px;
+			margin-right: 1rem;
+			font-weight: bold;
+			letter-spacing: -7px;
+			margin-top: 1rem;
+			margin-bottom: -2rem;
+			padding: 0px;
+		}
+
+		.div1 > h2{
+			color: #5dff00;
+			text-align: left;
+			font-size:64px;
+			margin-right: 2rem;
+			margin-left: 2rem;
+			font-weight: bold;
+			letter-spacing: -7px;
+			margin-top: 1rem;
+			margin-bottom: -2rem;
+		}
+
+		.div1 > p{
+			color: #ffffff;
+			text-align: left;
+			font-size:20px;
+			margin: 8rem 2rem;
+		}
+
+		.div1 > ul{
+			color: #ffffff;
+			text-align: left;
+			font-size:18px;
+			margin: 3rem 2rem;
+		}
+		
+		.div1 > ul > li{
+			margin: 1rem;
+		}
+
+		.div1 > p{
+			text-align: left;
+			margin-top: 12rem;
+			margin-left: 1rem;
+			color: #53dbfb;
+			font-family:Arial,serif;
+			font-weight: bold;
+			float: left;
+		}
+
+		.p1{
+			text-align: right;
+			margin-right: 0rem;
+			color: #53dbfb;
+			font-family:Arial,serif;
+			font-weight: bold;
+			float: right;
+		}
+
+		.div1{
+			font-family:Arial,serif;
+			height: 700px;
+			width: 40%;
+			background-color: #373d4d;
+			float: left;
+		}
+
+		.div2{
+			height: 700px;
+			width: 60%;
+			background-color: #4a6a82;
+			float: right;
+		}
+
+		.div2 > section > p{
+			color: #aee2ef;
+			
+			font-size:42px;
+			margin: 1rem 2rem;
+		}
+		.div2 > section > h5{
+			margin-top: 2rem;
+			margin-bottom: 1rem;
+			margin-right: 2rem;
+			color: #5dff00;
+			text-align: right;
+			font-size: 38px;	
+		}
+
+		.sec2
+		{
+			border-top: 4px solid #5dff00;
+			border-bottom: 4px solid #5dff00;
+			margin: 8rem 2rem;
+		}
+
+		.div2 > p{
+			text-align: right;
+			margin-right: 1rem;
+			color: #53dbfb;
+			font-family:Arial,serif;
+			font-weight: bold;
+		}
+
+		.div3{
+			height: 700px;
+			width: 60%;
+			background-color: #c1e3ef;
+			float: right;
+		}
+
+		.div3 > h2{
+			color: #44485d;
+			text-align: left;
+			font-size:32px;
+			margin-right: 4rem;
+			margin-left: 4rem;
+			font-weight: bold;
+			margin-top: 3rem;
+			font-family:Arial,serif;
+		}
+		.div3 > h3{
+			color: #44485d;
+			text-align: left;
+			font-size:32px;
+			margin-right: 4rem;
+			margin-left: 4rem;
+			font-weight: bold;
+			margin-top: 1rem;
+			font-family:Arial,serif;
+		}
+		.div3 p{
+			font-family:Arial,serif;
+			margin-right: 4rem;
+			margin-left: 4rem;
+			line-height: 30px;
+		}
+		.sec3{
+			margin-right: 4.5rem;
+			margin-left: 4.5rem;
+		}
+
+		.sec4{
+			margin-right: 8rem;
+			margin-left: 8rem;
+			margin-top: 4rem;
+			margin-bottom: 4rem;
+		}
+
+		.sec4 > h2{
+			color: #44485d;
+			text-align: left;
+			font-size:32px;
+			font-weight: bold;
+			font-family:Arial,serif;
+			margin-bottom: 1.5rem;
+		}
+
+		.sec4 > img{
+			float: left;
+		}
+
+		.sec4 > p{
+			font-size: 20px;
+		}
+
+		.sec4 > table{
+			font-family:Arial,serif;
+			border-collapse: collapse;
+			width: 100%;
+			border: 1px solid black;
+		}
+		.sec4 > table thead{
+			padding: 5px;
+			font-weight: bold;
+			color: white;
+			background-color: #578dac;
+			margin: 10px;
+		}
+		.sec4 > table thead td{
+			padding: 5px;
+			margin: 20px;
+			width: 25%;
+		}
+		
+		.sec5{
+			padding: 5px;
+			text-align: right;
+			border: 1px solid black;
+		}
+		
+		.sec6{
+			padding: 5px;
+			border-bottom: 1px solid white;
+			border-left: 1px solid white;	
+		}
+
+		.sec7{
+			padding: 5px;
+			border: 1px solid black;
+		}
+		.sec8{
+			padding: 5px;
+			border: 1px solid black;
+			text-align: right;
+			color: tomato;
+		}
+		.sec9{
+			padding: 5px;
+			border: 1px solid black;
+			font-weight: bold;
+		}
+		.sec10{
+			text-align: left;
+			margin-right: 1rem;
+			color: #53dbfb;
+			font-family:Arial,serif;
+			font-weight: bold;
+		}
+    </style>
+</head>
+<body>
+	<section class="sec1">
+		<div class="div1">
+			<h4>Lorem Ipsum Dolor</h4>
+			<h1>THE</h1> 
+			<h1>BOOK OF</h1> 
+			<h1>CSS 3</h1>
+			<h1>TIPS</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+		</div>
+	
+		<div class="div2">
+			<section class="sec2">
+				<p>“Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusod tempor incididunt utlab oreet dolore magnalia.” </p>
+				<h5>-John Doe</h5>
+			</section>
+			<p>Next ></p>
+		</div>
+	</section>
+
+	<p>&nbsp;</p>
+	<hr>
+
+	<section class="sec1">
+		<div class="div1">
+			<h3>Duis aute irure amet</h3>
+			<h2>DONEC QUIS</h2> 
+			<ul>
+				<li>Lorem ipsum dolor sit amet, consectetur. </li>
+				<li>Adipisicing elit, sed do eiusmod tempor. </li>
+				<li>Incididunt ut labore et dolore magna. </li>
+				<li>Aliqua. Ut enim mollis imprediet libero ligula amet elecifend. </li>
+			</ul>
+			<p>< Previous</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p class="p1">Next</p>
+		</div>
+	
+		<div class="div3">
+			<h2>LOREM IPSUM DOLOR SIT</h2>
+			<p>Consectetur Adipis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui </p>
+			<section class="sec3">
+				<code>body {</br>&nbsp;&nbsp;&nbsp;font-family: Arial, Helvetica, sans-serif;</br> &nbsp;&nbsp;&nbsp;font-size: 16px;</br>&nbsp;&nbsp;&nbsp;background-color: green;</br>&nbsp;&nbsp;&nbsp;padding: 10px;</br>&nbsp;&nbsp;&nbsp;color: white;</br>}
+				</code>
+			</section>
+			
+			<h3>CRAS LIGULA EGET TEMP</h3>
+			<p> Aenean metus purus, iaculis ut imperdiet eget, sodales et massa. Duis pellentesque nisl vel massa dapibus non lacinia velit volutpat. Maecenas accumsan interdum sodales. In hac habitasse platea dictumst. Pellentesque ornare blandit orci, eget tristique risus convallis utivamus a sapien eque massa dapibus non lacinia velit volutpat iaculis ut.</p>
+			
+		</div>
+	</section>
+	<p>&nbsp;</p>
+	<hr>
+
+	<section class="sec4">
+		<h2>LOREM IPSUM DOLOR SIT AMET DOLOR SIT IT</h2>
+		<img src="http://via.placeholder.com/250.png" alt="sample 1">
+		<p>Consectetur Adipis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+		<p>&nbsp;</p>
+		<p>Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi. Sed consectetur dignissim dignissim. Donec pretium est sit amet ipsum fringilla feugiatAliquam erat volutpat maecenas scelerisque, orci sit amet cursus tincidunt, libero nisl eleifend tortor, vitae cursus risus mauris vitae nisi. </p>
+
+		<table>
+			<thead class="sec7">
+				<td class="sec7">Praesent</td>
+				<td class="sec7">Dolor</td>
+				<td class="sec7">Donec</td>
+				<td class="sec7">Maecenas</td>
+			</thead>
+			<tr class="sec7">
+				<td class="sec9">Donec elementum</td>
+				<td class="sec5">56</td>
+				<td class="sec5">23</td>
+				<td class="sec5">78</td>
+			</tr>
+			<tr class="sec7">
+				<td class="sec9">pariatur.Excepteur</td>
+				<td class="sec5">12</td>
+				<td class="sec5">8</td>
+				<td class="sec5">90</td>
+			</tr>
+			<tr class="sec7">
+				<td class="sec9">ullamco laboris</td>
+				<td class="sec5">56</td>
+				<td class="sec5"> </td>
+				<td class="sec5">21</td>
+				
+			</tr>
+			<tr class="sec7">
+				<td class="sec9">dignissim dignissim</td>
+				<td class="sec5">78</td>
+				<td class="sec5">56</td>
+				<td class="sec5">67</td>
+			</tr>
+			<tr>
+				<td class="sec6">&nbsp;</td>
+				<td class="sec6">&nbsp;</td>
+				<td class="sec6">&nbsp;</td>
+				<td class="sec8">567</td>
+			</tr>
+		</table>
+		<p class="sec10">< Previous</p>
+	</section>
+	
+</body>
+
+</html>

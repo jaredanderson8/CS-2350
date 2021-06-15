@@ -1,0 +1,6 @@
+npm install
+npm install jquery --save
+npm i --save jquery popper.js
+npm install bootstrap
+npm start
+npm run deploy

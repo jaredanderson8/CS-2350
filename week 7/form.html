@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="Form.html">
+	<title>Form Page</title>
+	<style>
+    </style>
+</head>
+<body>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Login Information</legend>
+            <label for="email-fld">Email Address</label>
+            <input type="email" name="email" id="email-fld" placeholder="type email here">
+            <br>
+            <label for="password-fld">Password</label>
+            <input type="password" name="password" id="password-fld">
+            <br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="about-fld"></label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <br>
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Undeclared
+            <br>
+            <span>Sports I like:</span>
+                <input type="checkbox" name="football" value="yes"> <label for="">Football</label>
+            <input type="checkbox" name="basketball" value="yes"> <label for="">basketball</label> 
+            <input type="checkbox" name="soccer" value="yes"> <label for="">Soccer</label> 
+            <br>
+            <label for="animal-fld"></label>
+            <select name="animal" id="animal-fld" multiple>
+                <option value="">Select one</option>
+                <option value="dog">Dog</option>
+                    <option value="cat" selected>Cat</option>
+                <option value="rat">Rat</option>
+                <option value="ant">Ant</option>
+            </select>
+            
+
+            <label for="tag-fld">Tags</label>
+            <input type="text" name="tags" id="tag-fld" list="genres">
+            <datalist id="genres">
+                <option value="drama"></option>
+                <option value="comedy"></option>
+                <option value="fantacy"></option>
+                <option value="horror"></option>
+            </datalist>
+
+        </fieldset>
+        
+        <br>
+        <button type="submit">Sign up</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
